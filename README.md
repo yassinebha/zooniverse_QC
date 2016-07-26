@@ -32,7 +32,7 @@ The most frequent issues related to brain segmentation and spatial normalisation
 
 ![Epic Fail](https://github.com/yassinebha/zooniverse_QC/blob/master/Fig_anat_MR_fail/morph_X_0010032_anat_template_target.gif?raw=true)
 
-#####  [Maybe Case](http://simexp.github.io/adhd200_qc_athena/wrapper_X0021005.html)
+#####  [Maybe Case](http://simexp.github.io/adhd200_qc_niak/wrapper_X0021005.html)
 ![maybe case](https://github.com/yassinebha/zooniverse_QC/blob/master/Fig_anat_MR_maybe/morph_X_0021005_anat_template_target.gif?raw=true)
 
 #####  [OK Case](http://simexp.github.io/adhd200_qc_athena/wrapper_X0021005.html)
