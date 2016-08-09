@@ -52,10 +52,12 @@ for ss = 1:length(fieldnames(files_in.func))
 
     ## Morph anat and template
     system(['convert ' folder_out 'summary_template.jpg  ' folder_out 'summary_' subj_id '_anat.jpg ' folder_out 'summary_template.jpg -delay 1 -morph 3 ' folder_out_zooniv 'morph_' subj_id '_anat_template.gif']);
+    system(['convert   -delay 30 ' folder_out_zooniv 'morph_' subj_id '_anat_template.gif[0] -delay 10 ' folder_out_zooniv 'morph_' subj_id '_anat_template.gif ' folder_out_zooniv 'morph_' subj_id '_anat_template.gif']);
     ## Resize image
     system(['mogrify -resize 315x353 ' folder_out_zooniv 'morph_' subj_id '_anat_template.gif']);
     ## Morph anat and func
     system(['convert  ' folder_out 'summary_' subj_id '_anat.jpg  ' folder_out 'summary_' subj_id '_func.jpg ' folder_out 'summary_' subj_id '_anat.jpg -delay 1 -morph 3 ' folder_out_zooniv 'morph_' subj_id '_anat_func.gif']);
+    system(['convert   -delay 30 ' folder_out_zooniv 'morph_' subj_id '_anat_func.gif[0] -delay 10 ' folder_out_zooniv 'morph_' subj_id '_anat_func.gif ' folder_out_zooniv 'morph_' subj_id '_anat_func.gif']);
     ## Resize image
     system(['mogrify -resize 310x348 ' folder_out_zooniv 'morph_' subj_id '_anat_func.gif']);
     
